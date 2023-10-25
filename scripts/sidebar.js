@@ -10,6 +10,6 @@ videos.forEach((Subscription) => {
 	SubscriptionHTML += `
     <div class="sidebar-channels" title="${Subscription.info.author}">
         <img src="${Subscription.authorPic.picture}" />
-        <div>${Subscription.info.author}</div>
+        <div class="ellipsis-text">${Subscription.info.author}</div>
     </div>`;
 });
