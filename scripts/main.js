@@ -2,6 +2,7 @@
 import { videos } from "../data/videos.js";
 import { SubscriptionHTML } from "./sidebar.js";
 
+//----------------------------------------
 //Combine the HTML together and put it on the page
 let videosHTML = "";
 
@@ -45,6 +46,7 @@ videos.forEach((video) => {
 document.querySelector(".js-video-grid").innerHTML = videosHTML;
 document.querySelector(".js-sidebar-channels").innerHTML = SubscriptionHTML;
 
+//----------------------------------------
 //This is for Search Bar function
 //Function to render videos
 const renderVideos = (videosArray) => {
@@ -116,5 +118,38 @@ document
 document.querySelector(".search-bar").addEventListener("keypress", (event) => {
 	if (event.key === "Enter") {
 		handleSearch();
+	}
+});
+
+//----------------------------------------
+//This is for Voice Search Button
+document.addEventListener("DOMContentLoaded", function () {
+	const voiceSearchButton = document.getElementById("voiceSearchButton");
+	const searchInput = document.querySelector(".search-bar");
+
+	voiceSearchButton.addEventListener("click", function () {
+		//Initialize the speech recognition model
+		initSpeechRecognition();
+	});
+
+	function initSpeechRecognition() {
+		//Check if the browser supports the Web Speech API
+		if ("SpeechRecognition" in window || "webkitSpeechRecognition" in window) {
+			const SpeechRecognition =
+				window.SpeechRecognition || window.webkitSpeechRecognition;
+			const recognition = new SpeechRecognition();
+
+			//Set language for recognition
+			recognition.lang = "en-US";
+
+			//Start recognition
+			recognition.start();
+
+			//Event handler when speech is recognized
+			recognition.onresult = function (event) {
+				const transcript = event.results[0][0].transcript;
+				searchInput.value = transcript;
+			};
+		}
 	}
 });
