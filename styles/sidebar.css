@@ -70,6 +70,14 @@
 	margin-right: 23px;
 }
 
+/*Sidebar Channel text limit*/
+.ellipsis-text {
+	max-width: 100px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
 .sidebar-channels img {
 	border-radius: 50%;
 }
