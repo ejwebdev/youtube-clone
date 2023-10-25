@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="icon" href="icons/my-logo.png" />
+		<title>YouTube</title>
+
+		<!--These are CSS link files-->
+		<link rel="stylesheet" href="styles/general.css" />
+		<link rel="stylesheet" href="styles/header.css" />
+		<link rel="stylesheet" href="styles/sidebar.css" />
+		<link rel="stylesheet" href="styles/category.css" />
+		<link rel="stylesheet" href="styles/video.css" />
+
+		<!--These are Fonts link from google-->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body>
+		<!--This is YouTube header section-->
+		<header class="header">
+			<!--left section of the header-->
+			<div class="left-section">
+				<img
+					class="hamburger-menu js-hamburger-menu"
+					src="icons/hamburger-menu.svg"
+				/>
+				<a href="index.html">
+					<img class="youtube-logo" src="icons/youtube-logo.svg" />
+				</a>
+			</div>
+
+			<!--mid section of the header-->
+			<div class="middle-section">
+				<input class="search-bar" type="text" placeholder="Search" />
+				<button class="search-button">
+					<img class="search-icon" src="icons/search.svg" />
+					<div class="tooltip">Search</div>
+				</button>
+				<button class="voice-search-button" id="voiceSearchButton">
+					<img class="voice-search-icon" src="icons/voice-search-icon.svg" />
+					<div class="tooltip">Search with your voice</div>
+				</button>
+			</div>
+
+			<!--right section of the header-->
+			<div class="right-section">
+				<div class="upload-icon-container">
+					<img class="upload-icon" src="icons/upload.svg" />
+					<div class="tooltip">Create</div>
+				</div>
+				<div class="notifications-icon-container">
+					<img class="notifications-icon" src="icons/notifications.svg" />
+					<div class="notifications-count">3</div>
+					<div class="tooltip">Notifications</div>
+				</div>
+				<img class="current-picture-user" src="channels/my-channel.jpg" />
+			</div>
+		</header>
+
+		<!--This is YouTube sidebar section-->
+		<nav class="sidebar">
+			<!--Home sidebar buttons-->
+			<div class="js-home-sidebar-link">
+				<div class="home-sidebar-link">
+					<img src="icons/home.svg" />
+					<div>Home</div>
+				</div>
+				<div class="home-sidebar-link">
+					<img src="icons/shorts.svg" />
+					<div>Shorts</div>
+				</div>
+				<div class="home-sidebar-link">
+					<img src="icons/subscriptions.svg" />
+					<div>Subscriptions</div>
+				</div>
+
+				<!--Sidebar line seperator-->
+				<div class="sidebar-line"></div>
+
+				<div class="home-sidebar-link">
+					<img src="icons/library.svg" />
+					<div>Library</div>
+				</div>
+
+				<!--Sidebar hide in responsive-->
+				<div class="home-sidebar-link">
+					<img src="icons/history.svg" />
+					<div>History</div>
+				</div>
+				<div class="home-sidebar-link">
+					<img src="icons/your-videos.svg" />
+					<div>Your videos</div>
+				</div>
+				<div class="home-sidebar-link">
+					<img src="icons/watch-later.svg" />
+					<div>Watch later</div>
+				</div>
+				<div class="home-sidebar-link">
+					<img src="icons/liked-videos.svg" />
+					<div>Liked videos</div>
+				</div>
+				<div class="home-sidebar-link">
+					<img src="icons/show-more.svg" />
+					<div>Show more</div>
+				</div>
+			</div>
+
+			<!--Sidebar line seperator-->
+			<div class="sidebar-line"></div>
+
+			<!--Subscription section-->
+			<div class="js-sidebar-subscription">
+				<div class="sidebar-title">
+					<p>Subscriptions</p>
+				</div>
+				<div class="js-sidebar-channels">
+					<!--All the content was on videos.js-->
+					<!--All the html content displayed on sidebar.js-->
+				</div>
+				<div class="sidebar-channels">
+					<img src="icons/show-more.svg" />
+					<div>Show 4 more</div>
+				</div>
+			</div>
+
+			<!--Sidebar line seperator-->
+			<div class="sidebar-line"></div>
+
+			<!--Explore sidebar Buttons-->
+			<div class="js-explore-sidebar-link">
+				<div class="sidebar-title">
+					<p>Explore</p>
+				</div>
+				<div class="explore-sidebar-link">
+					<img src="icons/trending.svg" />
+					<div>Trending</div>
+				</div>
+				<div class="explore-sidebar-link">
+					<img src="icons/music.svg" />
+					<div>Music</div>
+				</div>
+				<div class="explore-sidebar-link">
+					<img src="icons/movies.svg" />
+					<div>Movies</div>
+				</div>
+				<div class="explore-sidebar-link">
+					<img src="icons/gaming.svg" />
+					<div>Gaming</div>
+				</div>
+				<div class="explore-sidebar-link">
+					<img src="icons/news.svg" />
+					<div>News</div>
+				</div>
+				<div class="explore-sidebar-link">
+					<img src="icons/sports.svg" />
+					<div>Sports</div>
+				</div>
+				<div class="explore-sidebar-link">
+					<img src="icons/fashion-beauty.svg" />
+					<div>Fashion & Beauty</div>
+				</div>
+			</div>
+		</nav>
+
+		<!--This is YouTube categories-->
+		<div class="categories">
+			<section class="category-section">
+				<button class="category-active">All</button>
+				<button class="category">CSS</button>
+				<button class="category">Gaming</button>
+				<button class="category">Music</button>
+				<button class="category">JavaScript</button>
+				<button class="category">Mixes</button>
+				<button class="category">Hillsong Worship Music</button>
+				<button class="category">Graphic Design</button>
+				<button class="category">Live</button>
+				<button class="category">Minecraft</button>
+				<button class="category">Bodybuilding</button>
+				<button class="category">Photoshop</button>
+				<button class="category">Gym</button>
+				<button class="category">Guitar Covers</button>
+				<button class="category">Mobile Legends Tournaments</button>
+				<button class="category">Anime</button>
+				<button class="category">Java</button>
+				<button class="category">Piano Tutorials</button>
+			</section>
+		</div>
+
+		<main>
+			<!-- Main video grid-->
+			<section class="video-grid js-video-grid">
+				<!--All the content was on videos.js-->
+				<!--All the html content displayed on main.js-->
+			</section>
+		</main>
+
+		<!--This is JS link file-->
+		<script type="module" src="scripts/main.js"></script>
+	</body>
+</html>
