@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="icon" href="icons/my-logo.png" />
+		<title>YouTube</title>
+
+		<!-- CSS links -->
+		<link rel="stylesheet" href="styles/general.css" />
+		<link rel="stylesheet" href="styles/header.css" />
+		<link rel="stylesheet" href="styles/sidebar.css" />
+		<link rel="stylesheet" href="styles/category.css" />
+		<link rel="stylesheet" href="styles/video.css" />
+
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body>
+		<!-- Header -->
+		<header class="header">
+			<!-- Left -->
+			<div class="left-section">
+				<img
+					class="hamburger-menu js-hamburger-menu"
+					src="icons/hamburger-menu.svg"
+				/>
+				<a href="index.html">
+					<img class="youtube-logo" src="icons/youtube-logo.svg" />
+				</a>
+			</div>
+
+			<!-- Mid -->
+			<div class="middle-section">
+				<input class="search-bar" type="text" placeholder="Search" />
+				<button class="search-button">
+					<img class="search-icon" src="icons/search.svg" />
+					<div class="tooltip">Search</div>
+				</button>
+				<button class="voice-search-button" id="voiceSearchButton">
+					<img class="voice-search-icon" src="icons/voice-search-icon.svg" />
+					<div class="tooltip">Search with your voice</div>
+				</button>
+			</div>
+
+			<!-- Right -->
+			<div class="right-section">
+				<div class="upload-icon-container">
+					<img class="upload-icon" src="icons/upload.svg" />
+					<div class="tooltip">Create</div>
+				</div>
+				<div class="notifications-icon-container">
+					<img class="notifications-icon" src="icons/notifications.svg" />
+					<div class="notifications-count">3</div>
+					<div class="tooltip">Notifications</div>
+				</div>
+				<img class="current-picture-user" src="channels/my-channel.jpg" />
+			</div>
+		</header>
+
+		<!-- Sidebar -->
+		<nav class="sidebar">
+			<!-- Main Sidebar -->
+			<div class="main-sidebar">
+				<!-- JS Content -->
+			</div>
+			<div class="sidebar-line"></div>
+			<div class="more-sidebar">
+				<!-- JS Content -->
+			</div>
+			<div class="sidebar-line"></div>
+
+			<!-- Subscription -->
+			<div>
+				<div class="sidebar-title">
+					<p>Subscriptions</p>
+				</div>
+				<div class="channels-sidebar">
+					<!-- JS Content -->
+				</div>
+				<div class="channels-sidebar-link">
+					<img src="icons/show-more.svg" />
+					<p>Show 4 more</p>
+				</div>
+			</div>
+			<div class="sidebar-line"></div>
+
+			<!-- Explore Sidebar -->
+			<div>
+				<div class="sidebar-title">
+					<p>Explore</p>
+				</div>
+				<div class="explore-sidebar">
+					<!-- JS Content -->
+				</div>
+			</div>
+		</nav>
+
+		<!-- Categories -->
+		<div class="categories">
+			<section class="category-section">
+				<!-- JS Content -->
+			</section>
+		</div>
+
+		<main>
+			<!-- Main Grid -->
+			<section class="video-grid">
+				<!-- JS Content -->
+			</section>
+		</main>
+
+		<!-- Google Web Speech API -->
+		<script src="https://unpkg.com/@tensorflow/tfjs"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands"></script>
+
+		<script type="module" src="scripts/main.js"></script>
+	</body>
+</html>
